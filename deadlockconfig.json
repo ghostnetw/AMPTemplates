@@ -46,7 +46,7 @@
         "DisplayName":"Game Server Login Token (GSLT)",
         "Category":"Deadlock:stadia_controller",
         "Subcategory":"Server Settings:settings:1",
-        "Description":"Sets the [Steam Game Server Login Token](https://steamcommunity.com/dev/managegameservers) for the server, to allow it to be listed in the server browser. Use app ID 730 when generating the token",
+        "Description":"Sets the [Steam Game Server Login Token](https://steamcommunity.com/dev/managegameservers) for the server, to allow it to be listed in the server browser. Use app ID 1422450 when generating the token",
         "Keywords":"steam,server,login,token,gslt,sv_setsteamaccount",
         "FieldName":"sv_setsteamaccount",
         "InputType":"password",
@@ -94,8 +94,8 @@
         "IncludeInCommandLine":true,
         "DefaultValue":"street_test",
         "EnumValues":{
-            "1v1_test": "1v1_test",
-			"street_test": "street_test",
+            "1v1_test":"1v1_test",
+			"street_test":"street_test",
             "{{CustomMap}}":"--Custom--"
         }
     },
@@ -110,52 +110,6 @@
         "ParamFieldName":"CustomMap",
         "DefaultValue":"",
         "EnumValues":{}
-    },
-    {
-        "DisplayName":"Workshop Map ID",
-        "Category":"Deadlock:stadia_controller",
-        "Subcategory":"Server Settings:settings:1",
-        "Description":"Sets the ID of a [Steam workshop map](https://steamcommunity.com/workshop/browse/?appid=730&browsesort=trend&section=readytouseitems) to download and load on the server. This will override the Initial Map setting",
-        "Keywords":"workshop,map,host_workshop_map",
-        "FieldName":"host_workshop_map",
-        "InputType":"number",
-        "ParamFieldName":"host_workshop_map",
-        "IncludeInCommandLine":true,
-        "SkipIfEmpty":true,
-        "DefaultValue":"",
-        "Placeholder":"3070217773",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Workshop Collection ID",
-        "Category":"Deadlock:stadia_controller",
-        "Subcategory":"Server Settings:settings:1",
-        "Description":"Sets the ID of a [Steam workshop collection](https://steamcommunity.com/workshop/browse/?appid=730&browsesort=trend&section=collections) to download and load on the server. This will override the Initial Map setting",
-        "Keywords":"workshop,collection,host_workshop_collection",
-        "FieldName":"host_workshop_collection",
-        "InputType":"number",
-        "ParamFieldName":"host_workshop_collection",
-        "IncludeInCommandLine":true,
-        "SkipIfEmpty":true,
-        "DefaultValue":"",
-        "Placeholder":"3065925629",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Allow Other Map By Players",
-        "Category":"Deadlock:stadia_controller",
-        "Subcategory":"Server Settings:settings:1",
-        "Description":"If set, and when the server is hosting a workshop collection, players will be able to play another workshop map on the server when it is empty and then rotate their map cycle into the server collection",
-        "Keywords":"workshop,map,allow,other,sv_workshop_allow_other_maps",
-        "FieldName":"sv_workshop_allow_other_maps",
-        "InputType":"checkbox",
-        "ParamFieldName":"sv_workshop_allow_other_maps",
-        "IncludeInCommandLine":true,
-        "DefaultValue":"false",
-        "EnumValues":{
-            "False":"false",
-            "True":"true"
-        }
     },
     {
         "DisplayName":"Player Limit",
