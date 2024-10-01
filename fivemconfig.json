@@ -2,7 +2,7 @@
     {
         "DisplayName":"Server Port",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"",
         "Keywords":"",
         "FieldName":"$ServerPort",
@@ -14,7 +14,7 @@
     {
         "DisplayName":"Cfx.re Licence Key",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the [Cfx.re licence key](https://keymaster.fivem.net/login?return_url=/) required to run the server. When creating the key, specify the public IP on which the key will first be used. Afterwards, the key can be used for a single server instance on any IP",
         "Keywords":"licence,license,key,keymaster,sv_licenseKey",
         "FieldName":"sv_licenseKey",
@@ -27,7 +27,7 @@
     {
         "DisplayName":"Steam Web API Key",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the [Steam Web API key](https://steamcommunity.com/login/home/?goto=%2Fdev%2Fapikey) required to allow for Steam identifiers to be returned by the server",
         "Keywords":"steam,web,api,key,steam_webApiKey",
         "FieldName":"steam_webApiKey",
@@ -39,7 +39,7 @@
     {
         "DisplayName":"Server Name",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the name that shows when selecting the server in the server browser",
         "Keywords":"server,name,hostname",
         "FieldName":"sv_hostname",
@@ -51,7 +51,7 @@
     {
         "DisplayName":"Project Name",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the name that shows in the server browser. It should not be a list or contain tags. Any non-compliant name will be cut off in the server list",
         "Keywords":"project,name,sv_projectName",
         "FieldName":"sv_projectName",
@@ -63,7 +63,7 @@
     {
         "DisplayName":"Project Description",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the description that shows in the server browser",
         "Keywords":"project,description,sv_projectDesc",
         "FieldName":"sv_projectDesc",
@@ -75,7 +75,7 @@
     {
         "DisplayName":"Server Tags",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets a comma-separated list of server tags that give additional information about the server in the server browser",
         "Keywords":"tags",
         "FieldName":"tags",
@@ -88,7 +88,7 @@
     {
         "DisplayName":"Server Locale",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the locale identifier for the server's primary language. The locale code must follow the [ISO 639-1 standard](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), and the country code must follow the [ISO 3166-1 alpha-2 standard](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)",
         "Keywords":"locale,language,country",
         "FieldName":"locale",
@@ -101,7 +101,7 @@
     {
         "DisplayName":"Server Icon",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the filename of an icon to load as the server icon. The icon needs to be a 96x96 PNG file",
         "Keywords":"server,icon,load_server_icon",
         "FieldName":"load_server_icon",
@@ -114,7 +114,7 @@
     {
         "DisplayName":"Server Detail Banner Image URL",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the URL for a server banner image. The image should be in PNG or GIF format, with the optimal size being 1865x250",
         "Keywords":"banner,detail,image,url,banner_detail",
         "FieldName":"banner_detail",
@@ -127,7 +127,7 @@
     {
         "DisplayName":"Connecting Banner Image URL",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the URL for a connecting banner image. The image should be in PNG or GIF format",
         "Keywords":"banner,connecting,image,url,banner_connecting",
         "FieldName":"banner_connecting",
@@ -140,7 +140,7 @@
     {
         "DisplayName":"Mark Server Private",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"If set, the server will be set as \"private\", making it not possible to join by using the server browser UI (the server connect button will be disabled). The server will not be de-listed from the master list",
         "Keywords":"private,server,list,sv_master1",
         "FieldName":"sv_master1",
@@ -155,7 +155,7 @@
     {
         "DisplayName":"Starting Resources",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the resources to load on server start. One entry per line in the format: ensure <resourcename>",
         "Keywords":"ensure,resources",
         "FieldName":"ensure",
@@ -168,7 +168,7 @@
     {
         "DisplayName":"Enable Endpoint Privacy",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"If set, player IP addresses will be hidden from public reports that the server outputs",
         "Keywords":"endpoint,privacy,hide,hidden,addresses,sv_endpointPrivacy",
         "FieldName":"sv_endpointPrivacy",
@@ -183,7 +183,7 @@
     {
         "DisplayName":"Enforce Game Build",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the game build for clients to use. This can only be specified at startup, and cannot be changed at runtime",
         "Keywords":"enforce,game,build,sv_enforceGameBuild",
         "FieldName":"sv_enforceGameBuild",
@@ -205,7 +205,7 @@
     {
         "DisplayName":"Player Limit",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets the maximum number of players that may connect to the server at one time. Values starting at 32 require OneSync to be \"On\" or \"Legacy\", and values above 64 require OneSync to be \"On\"",
         "Keywords":"maximum,players,clients,limit,maxClients",
         "FieldName":"$MaxUsers",
@@ -221,7 +221,7 @@
     {
         "DisplayName":"OneSync Mode",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets whether to use the [OneSync](https://docs.fivem.net/docs/scripting-reference/onesync/) state awareness system. OneSync is free up to 48 players. \"Legacy\" mode is not recommended",
         "Keywords":"onesync,state,awareness,system",
         "FieldName":"onesync",
@@ -237,7 +237,7 @@
     {
         "DisplayName":"Enable OneSync Population",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"If enabled, NPCs and vehicles will be spawned on the server. Requires OneSync to be \"On\"",
         "Keywords":"onesync,population,npcs,vehicles,onesync_population",
         "FieldName":"onesync_population",
@@ -252,7 +252,7 @@
     {
         "DisplayName":"Enable OneSync Vehicle Distance Culling",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"If enabled, player-occupied vehicles will be subject to distance culling. Requires OneSync to be \"On\"",
         "Keywords":"onesync,vehicles,distance,cull,culling,onesync_distanceCullVehicles",
         "FieldName":"onesync_distanceCullVehicles",
@@ -267,7 +267,7 @@
     {
         "DisplayName":"Enable OneSync Forced Migration",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"If set, any entity that has not received any clone sync updates for over a certain period will be migrated to any other nearby player. Requires OneSync to be \"On\"",
         "Keywords":"onesync,force,migration,onesync_forceMigration",
         "FieldName":"onesync_forceMigration",
@@ -282,7 +282,7 @@
     {
         "DisplayName":"Enable OneSync Workaround",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"If set, most cars will be stopped from duplicating and cars will be prevented from having a ram war. Requires OneSync to be \"On\"",
         "Keywords":"onesync,workaround,onesync_workaround763185",
         "FieldName":"onesync_workaround763185",
@@ -297,7 +297,7 @@
     {
         "DisplayName":"Allow Scripthook Plugins",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"If set, players can use scripthook-based plugins such as the legacy Lambda Menu. This does not guarantee players won't be able to use external plugins",
         "Keywords":"scripthook,plugins,sv_scriptHookAllowed",
         "FieldName":"sv_scriptHookAllowed",
@@ -312,7 +312,7 @@
     {
         "DisplayName":"Block Modified Client Files",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets whether players will be prevented from using modified client files",
         "Keywords":"modified,client,files,sv_pureLevel",
         "FieldName":"sv_pureLevel",
@@ -328,7 +328,7 @@
     {
         "DisplayName":"Access Control Commands",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Specifies [access control commands](https://docs.fivem.net/docs/server-manual/server-commands/#access-control-commands) to include in \"server.cfg\". This can be used to add system admins",
         "Keywords":"admin,access,control",
         "FieldName":"AccessControlCommands",
@@ -340,7 +340,7 @@
     {
         "DisplayName":"Enable HTTP Flood Protection",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Sets whether to implement measures to counter proxy-based HTTP floods. If set to Level 2 or 3, all requests made to info.json, dynamic.json and players.json related endpoints will return \"Nope\"",
         "Keywords":"http,flood,protection,sv_requestParanoia",
         "FieldName":"sv_requestParanoia",
@@ -357,7 +357,7 @@
     {
         "DisplayName":"Server/RCON IP Binding",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"If required, you can change the binding of the server and RCON by changing the 'Server IP Address' setting under Security and Privacy. NOTE: The IP must be reachable by AMP, otherwise AMP's console won't work",
         "Keywords":"ip,binding,endpoint,endpoint_add_udp,endpoint_add_tcp",
         "FieldName":"$ApplicationIPBinding",
@@ -368,7 +368,7 @@
     {
         "DisplayName":"Additional Command Line Parameters",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Specifies additional command line parameters that are not otherwise set by AMP. ONE LINE ONLY! Use with care. Alternatively, specify the equivalent under \"Additional Server Settings\"",
         "Keywords":"custom,server,arguments,variables,parameters",
         "FieldName":"CustomArgs",
@@ -380,7 +380,7 @@
     {
         "DisplayName":"Additional Server Settings",
         "Category":"FiveM:stadia_controller",
-        "Subcategory":"Server Settings",
+        "Subcategory":"Server:dns:1",
         "Description":"Specifies additional settings to include in \"server.cfg\" that are not otherwise set by AMP. One setting per line",
         "Keywords":"additional,settings,custom",
         "FieldName":"UserSettings",
