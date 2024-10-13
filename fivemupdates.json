@@ -18,7 +18,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'rm -rf {{$FullBaseDir}}server/alpine/*'",
+        "UpdateSourceArgs":"-c \"rm -rf \\\"{{$FullBaseDir}}server/alpine/\\\"* >/dev/null 2>&1\"",
         "SkipOnFailure":true
     },
     {
@@ -26,7 +26,7 @@
         "UpdateSourcePlatform":"Windows",
         "UpdateSource":"Executable",
         "UpdateSourceData":"cmd.exe",
-        "UpdateSourceArgs":"/C del /Q /F {{$FullBaseDir}}server\\alpine\\*",
+        "UpdateSourceArgs":"/C del /Q /F \"{{$FullBaseDir}}server\\alpine\\\"* > NUL 2>&1",
         "SkipOnFailure":true
     },
     {
@@ -157,7 +157,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c \"cd ./fivem/server && tar -xf fx.tar.xz && rm -f fx.tar.xz\""
+        "UpdateSourceArgs":"-c \"cd ./fivem/server && tar -xf fx.tar.xz >/dev/null 2>&1 && rm -f fx.tar.xz\""
     },
     {
         "UpdateStageName":"Clone Resources Repo",
