@@ -4,14 +4,16 @@
         "UpdateSourcePlatform":"All",
         "UpdateSource":"CreateDirectory",
         "UpdateSourceArgs":"{{$FullBaseDir}}server",
-        "OverwriteExistingFiles":false
+        "OverwriteExistingFiles":false,
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Create Data Directory",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"CreateDirectory",
         "UpdateSourceArgs":"{{$FullBaseDir}}server-data",
-        "OverwriteExistingFiles":false
+        "OverwriteExistingFiles":false,
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Delete Binary Directory Contents",
@@ -40,7 +42,8 @@
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true,
         "UpdateSourceConditionSetting":"ServerBuild",
-        "UpdateSourceConditionValue":"recommended_download"
+        "UpdateSourceConditionValue":"recommended_download",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Server Download",
@@ -52,7 +55,8 @@
         "UnzipUpdateSource":false,
         "OverwriteExistingFiles":true,
         "UpdateSourceConditionSetting":"ServerBuild",
-        "UpdateSourceConditionValue":"recommended_download"
+        "UpdateSourceConditionValue":"recommended_download",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Server Download",
@@ -65,7 +69,8 @@
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true,
         "UpdateSourceConditionSetting":"ServerBuild",
-        "UpdateSourceConditionValue":"optional_download"
+        "UpdateSourceConditionValue":"optional_download",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Server Download",
@@ -77,7 +82,8 @@
         "UnzipUpdateSource":false,
         "OverwriteExistingFiles":true,
         "UpdateSourceConditionSetting":"ServerBuild",
-        "UpdateSourceConditionValue":"optional_download"
+        "UpdateSourceConditionValue":"optional_download",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Server Download",
@@ -90,7 +96,8 @@
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true,
         "UpdateSourceConditionSetting":"ServerBuild",
-        "UpdateSourceConditionValue":"latest_download"
+        "UpdateSourceConditionValue":"latest_download",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Server Download",
@@ -102,7 +109,8 @@
         "UnzipUpdateSource":false,
         "OverwriteExistingFiles":true,
         "UpdateSourceConditionSetting":"ServerBuild",
-        "UpdateSourceConditionValue":"latest_download"
+        "UpdateSourceConditionValue":"latest_download",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Server Download",
@@ -115,7 +123,8 @@
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true,
         "UpdateSourceConditionSetting":"ServerBuild",
-        "UpdateSourceConditionValue":"critical_download"
+        "UpdateSourceConditionValue":"critical_download",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Server Download",
@@ -127,7 +136,8 @@
         "UnzipUpdateSource":false,
         "OverwriteExistingFiles":true,
         "UpdateSourceConditionSetting":"ServerBuild",
-        "UpdateSourceConditionValue":"critical_download"
+        "UpdateSourceConditionValue":"critical_download",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Server Download",
@@ -140,6 +150,7 @@
         "DeleteAfterExtract":true,
         "UpdateSourceConditionSetting":"ServerBuild",
         "UpdateSourceConditionValue":"SpecificVersion",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Server Download",
@@ -151,13 +162,15 @@
         "OverwriteExistingFiles":true,
         "UpdateSourceConditionSetting":"ServerBuild",
         "UpdateSourceConditionValue":"SpecificVersion",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Server Extract",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c \"cd ./redm/server && tar -xf fx.tar.xz >/dev/null 2>&1 && rm -f fx.tar.xz\""
+        "UpdateSourceArgs":"-c \"cd ./redm/server && tar -xf fx.tar.xz >/dev/null 2>&1 && rm -f fx.tar.xz\"",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName":"Clone Resources Repo",
@@ -173,6 +186,7 @@
         "UpdateSourceData":"https://raw.githubusercontent.com/Greelan/AMPTemplates/fivemredm/redmserver.cfg",
         "UpdateSourceArgs":"AMP_server.cfg",
         "UpdateSourceTarget":"{{$FullInstanceDir}}",
-        "OverwriteExistingFiles":true
+        "OverwriteExistingFiles":true,
+        "SkipOnFailure":false
     }
 ]
