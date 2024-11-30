@@ -15,5 +15,29 @@
         "UpdateSourceArgs": "ServerSetting.ini",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "OverwriteExistingFiles": false
+    },
+    {
+        "UpdateStageName": "Download BepInEx",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "hhttps://github.com/BepInEx/BepInEx/releases/download/v{{BepInExVersion}}/BepInEx_win_x64_{{BepInExVersion}}.zip",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true,
+        "UpdateSourceConditionSetting": "BepInExEnabled",
+        "UpdateSourceConditionValue": "1"
+    },
+    {
+        "UpdateStageName": "Download BepInEx",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "hhttps://github.com/BepInEx/BepInEx/releases/download/v{{BepInExVersion}}/BepInEx_linux_x64_{{BepInExVersion}}.zip",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true,
+        "UpdateSourceConditionSetting": "BepInExEnabled",
+        "UpdateSourceConditionValue": "0"
     }
 ]

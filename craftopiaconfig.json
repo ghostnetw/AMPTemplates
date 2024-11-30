@@ -79,8 +79,8 @@
         "DefaultValue": "7",
         "EnumValues": {},
         "suffix": "players",
-        "MinValue":"1",
-        "MaxValue":"127"
+        "MinValue": "1",
+        "MaxValue": "127"
     },
     {
         "DisplayName": "Enable Password",
@@ -432,5 +432,33 @@
             "public": "Public (default)",
             "alpha-unstable": "Alpha unstable"
         }
+    },
+    {
+        "DisplayName": "Activate BepInEx",
+        "Category": "Updates",
+        "Subcategory": "Runtime Configuration:build:3",
+        "Description": "If set, BepInEx will be installed when the server is updated and enabled when the server is run, allowing the server to be modded. Mods must be installed in the BepInEx/plugins directory, which is created after BepInEx is first run. Also set the \"BepInEx Version\"",
+        "Keywords": "install,enable,bepinex,modded,mods",
+        "FieldName": "BepInExEnabled",
+        "InputType": "checkbox",
+        "ParamFieldName": "BepInExEnabled",
+        "DefaultValue": "0",
+        "EnumValues": {
+          "False": "0",
+          "True": "1"
+        }
+    },
+    {
+        "DisplayName": "BepInEx Version",
+        "Category": "Updates",
+        "Subcategory": "Runtime Configuration:build:3",
+        "Description": "Sets the [version](https://github.com/BepInEx/BepInEx/releases) of BepInEx to download. NOTE: Update the server after editing this option",
+        "Keywords": "install,bepinex,version",
+        "FieldName": "BepInExVersion",
+        "InputType": "text",
+        "ParamFieldName": "BepInExVersion",
+        "DefaultValue": "5.4.23.2",
+        "Placeholder": "5.4.23.2",
+        "EnumValues": {}
     }
 ]
