@@ -18,8 +18,8 @@
     {
         "UpdateStageName": "Server Download",
         "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "FetchURLFromJQ",
-        "UpdateSourceData": "https://changelogs-live.fivem.net/api/changelog/versions/win32/server",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/10653-2632c6dd1a417d29cbf1e228513be15017fa29b5/server.7z",
         "UpdateSourceArgs": "$.recommended_download",
         "UpdateSourceTarget": "{{$FullBaseDir}}server",
         "UnzipUpdateSource": true,
